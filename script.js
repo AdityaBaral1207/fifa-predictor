@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://fifa-predictor-ssp1.onrender.com";
 
 const matches = [
 
@@ -54,7 +54,7 @@ document.getElementById("prediction-result");
 argBtn.addEventListener("click", async () => {
 
     const response = await fetch(
-        "http://localhost:5000/prediction",
+        `${API_URL}/prediction`,
         {
             method: "POST",
             headers: {
