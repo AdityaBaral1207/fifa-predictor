@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FIFA Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            ⚽ Predictor
+        </div>
+
+        <div class="nav-icons">
+
+            <span>🔔</span>
+
+            <span>👤</span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <h1>
+                    PREDICT.
+                    <br>
+                    COMPETE.
+                    <br>
+                    BECOME A LEGEND.
+                </h1>
+
+                <p>
+                    FIFA World Cup 2026 Prediction League
+                </p>
+
+                <button class="predict-btn">
+                    Predict Now
+                </button>
+
+                <div class="points-card">
+
+                    🏆 Points:
+                    <span id="points">0</span>
+
+                </div>
+
+                <div class="points-card">
+
+                    🔥 Streak:
+                    <span id="streak">0</span>
+
+                </div>
+
+                <div id="notification"></div>
+
+                <!-- COUNTDOWN -->
+
+                <div class="countdown-card">
+
+                    <h3>
+                        ⏳ Next Match Starts In
+                    </h3>
+
+                    <div class="countdown">
+
+                        <div>
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+
+                        <div>
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+
+                        <div>
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED MATCH -->
+
+    <section class="featured-match">
+
+        <div class="section-title">
+            ⚽ Featured Match
+        </div>
+
+        <div class="match-card">
+
+            <h2>
+                🇦🇷 Argentina VS Brazil 🇧🇷
+            </h2>
+
+            <p>
+                Group Stage • 15 June 2026 • 8:00 PM
+            </p>
+
+            <div class="prediction-stats">
+
+                <div>
+                    Argentina 62%
+                </div>
+
+                <div>
+                    Brazil 38%
+                </div>
+
+            </div>
+
+            <div class="prediction-buttons">
+
+                <button id="arg-btn">
+                    Predict Argentina
+                </button>
+
+                <button id="bra-btn">
+                    Predict Brazil
+                </button>
+
+                <p id="prediction-result"></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LEADERBOARD -->
+
+    <section class="podium-section">
+
+        <div class="section-title">
+            🏆 TOP PREDICTORS
+        </div>
+
+        <div class="podium" id="leaderboard">
+
+        <!-- SECOND -->
+
+            <div class="podium-player second">
+
+                <div class="avatar silver">
+                🦅
+                </div>
+
+                <div class="points">
+                    220
+                </div>
+
+            </div>
+
+        
+
+        <!-- FIRST -->
+
+            <div class="podium-player first">
+
+                <div class="avatar gold">
+                    👑
+                </div>
+
+                <div class="points">
+                    245
+                </div>
+
+            </div>
+
+        
+
+        <!-- THIRD -->
+
+            <div class="podium-player third">
+
+                <div class="avatar bronze">
+                    🐺
+                </div>
+
+                <div class="points">
+                    210
+                </div>
+
+            </div>
+
+        </div>
+
+    
+
+    </section>
+
+
+    <section class="streaks-home">
+
+        <div class="section-title">
+            🔥 HOT STREAKS
+        </div>
+
+        <div class="streak-scroll">
+
+            <div class="streak-card">
+                🐺
+                <br>
+                6 Wins
+            </div>
+
+            <div class="streak-card">
+                🦅
+                <br>
+                5 Wins
+            </div>
+
+            <div class="streak-card">
+                🦁
+                <br>
+                4 Wins
+            </div>
+
+            <div class="streak-card">
+                🐯
+                <br>
+                4 Wins
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="community-section">
+
+        <div class="section-title">
+            📊 COMMUNITY PREDICTION
+        </div>
+
+        <div class="community-card">
+
+            <p>Argentina 62%</p>
+
+            <div class="bar">
+
+                <div class="fill">
+                </div>
+
+            </div>
+
+            <p>Brazil 38%</p>
+
+        </div>
+
+    </section>
+
+    <!-- HOT STREAKS -->
+
+    <section class="streak-section">
+
+        <div class="section-title">
+            🔥 Hot Streaks
+        </div>
+
+        <div class="leader-card">
+
+            <strong>PredKing</strong>
+
+            <br><br>
+
+            6 Match Winning Streak
+
+        </div>
+
+    </section>
+
+    <!-- AI STORY -->
+
+    
+
+    <!-- QUICK STATS -->
+
+    
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        FIFA Predictor © 2026
+
+    </footer>
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="bottom-nav">
+
+        <div>🏠</div>
+
+        <div>⚽</div>
+
+        <div>🏆</div>
+
+        <div>👤</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
