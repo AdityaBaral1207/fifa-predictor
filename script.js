@@ -282,3 +282,43 @@ async function loadLeaderboard() {
 }
 
 loadLeaderboard();
+
+
+const signupBtn =
+document.getElementById("signup-btn");
+
+signupBtn.addEventListener(
+    "click",
+    async () => {
+
+        const username =
+        document.getElementById(
+            "username-input"
+        ).value;
+
+        const response =
+        await fetch(
+            `${API_URL}/register`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type":
+                    "application/json"
+                },
+                body: JSON.stringify({
+
+                    username,
+
+                    avatar: "🔥"
+
+                })
+            }
+        );
+
+        const data =
+        await response.json();
+
+        alert(data.message);
+
+    }
+);
