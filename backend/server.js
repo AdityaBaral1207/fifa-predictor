@@ -116,7 +116,8 @@ app.post("/register", async (req, res) => {
 
         res.json({
             success: true,
-            message: "User Registered"
+            message: "User Registered",
+            userId: newUser._id
         });
 
     } catch (error) {
